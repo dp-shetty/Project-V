@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./love.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Valentines 💗 Day</title>
+  </head>
+
+  <body class="flex justify-center items-center">
+    <div
+      id="loveForm"
+      class="glossIp bg-white/20 backdrop-blur-lg shadow-lg border border-white/40 rounded-2xl p-8 w-96 max-sm:w-3/4 text-center mt-[12rem] max-sm:mt-[5.5rem]"
+    >
+      <h2 class="text-2xl font-bold text-white mb-4">💝Love Form💖</h2>
+      <input
+        type="email"
+        value="tsnikhitha24@gmail.com"
+        disabled
+        class="text-center w-full p-3 rounded-lg bg-white/30 border border-white/50 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-pink-400 mb-4"
+      />
+      <button
+        onclick="sendLoveEmail()"
+        class="loginbtn w-full bg-pink-500 hover:bg-pink-600 text-white py-3 rounded-lg font-semibold shadow-lg transition-all"
+      >
+        💘 Login to My Heart
+      </button>
+    </div>
+    <div id="loveLoader">
+      <div class="heart-loader"></div>
+      <p id="loveMessage" class="love-message">Loading love…</p>
+    </div>
+<div id="mediaContainer" class="flex flex-wrap gap-3 justify-center">
+</div>
+<div id="single" style="display: none;" class="abc flex-col items-center rounded-lg p-[1.5rem] gap-3">
+  <img id="theimg" src="./assets/nikku/1.webp" alt="">
+  <video id="thevid" style="display: none;" src=""></video>
+    <p id="desc" style="display: none;" ></p>
+    <button style="display: none;" id="butt" class="bg-pink-500 bg-pink-600 w-full rounded-lg text-white text-center flex justify-center">NEXT</button>
+</div>
+<div style="display: none;" id="qa-container" class="bg-white/20 backdrop-blur-lg shadow-lg border border-white/40 rounded-2xl p-8 w-96 max-sm:w-3/4 text-center mt-10">
+  <h2 class="text-2xl font-bold text-white mb-4">💞 Curious Questions 💞</h2>
+  <p id="qa-question" class="text-white text-lg italic mb-4"></p>
+  <input id="qa-answer" type="text" placeholder="Your love-filled answer..." class="w-full p-3 rounded-lg bg-white/30 border border-white/50 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-pink-400 mb-4"/>
+  <button id="next-btn" onclick="showNextQuestion()" class="bg-pink-500 hover:bg-pink-600 text-white py-3 px-6 rounded-lg font-semibold shadow-lg transition-all mb-4">
+    💌 Next Question
+  </button>
+  <button id="submit-btn" onclick="submitAnswer()" class="bg-red-500 hover:bg-red-600 text-white py-3 px-6 rounded-lg font-semibold shadow-lg transition-all" disabled>
+    ❤️ Submit Answer
+  </button>
+</div>
+    <script src="./love.js"></script>
+  </body>
+</html>
