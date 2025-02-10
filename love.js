@@ -668,7 +668,7 @@ function submitAnswer() {
               <p class="text-pink-600 font-medium mt-2">These inputs will always be etched in my memories 💓</p>
           `,
       showConfirmButton: false,
-      timer: 10,
+      timer: 10000,
       background: "rgba(255, 240, 246, 0.95)",
       color: "#d6336c",
       position: "center",
