@@ -84,7 +84,7 @@ function showLoveToast() {
             </p>
         `,
     showConfirmButton: false,
-    timer: 60,
+    timer: 60000,
     background: "rgba(255, 240, 246, 0.95)",
     color: "#d6336c",
     position: "center",
