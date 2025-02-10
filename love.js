@@ -659,7 +659,7 @@ function submitAnswer() {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ answers: collectedAnswers })
   })
-  .then(response => response.json())
+  .then(response => response.text())
   .then(data => {
     Swal.fire({
       title: "💌 Your answer has been submitted successfully to my Heart!! 💖",
@@ -683,6 +683,14 @@ function submitAnswer() {
       },
     });
   })
+  .catch(error => {
+    console.error("Error submitting answer:", error);
+    Swal.fire({
+      icon: "error",
+      title: "Submission Failed",
+      text: "Failed to submit answer. Please try again."
+    });
+  });
 }
 
 function showValentineProposal() {
