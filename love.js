@@ -678,9 +678,8 @@ function submitAnswer() {
         startFloatingHearts();
       },
       willClose: () => {
-        setTimeout(()=>{
-          showValentineProposal();
-        },5000)
+        stopFloatingHearts();
+        showValentineProposal();
       },
     });
   })
